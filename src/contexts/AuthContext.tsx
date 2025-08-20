@@ -136,7 +136,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
             id: data.user.id,
             nome,
             email,
-            palavra_passe: '', // Não armazenamos a palavra-passe (gerida pelo Supabase Auth)
             tipo_utilizador: tipo as Utilizador['tipo_utilizador']
           })
           .select()

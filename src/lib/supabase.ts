@@ -13,7 +13,6 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 export interface Utilizador {
   id: string;
   nome: string;
-  email: string;
   tipo_utilizador: 'admin' | 'produtor' | 'aluno' | 'afiliado';
   ativo: boolean;
   avatar_url?: string;
